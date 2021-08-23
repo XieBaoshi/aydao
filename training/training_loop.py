@@ -63,8 +63,8 @@ def training_schedule(
     D_lrate_base            = 0.002,    # Learning rate for the discriminator.
     D_lrate_dict            = {},       # Resolution-specific overrides.
     lrate_rampup_kimg       = 0,        # Duration of learning rate ramp-up.
-    tick_kimg_base          = 4,        # Default interval of progress snapshots.
-    tick_kimg_dict          = {8:28, 16:24, 32:20, 64:16, 128:12, 256:8, 512:6, 1024:4}, # Resolution-specific overrides.
+    tick_kimg_base          = 1,        # Default interval of progress snapshots.
+    tick_kimg_dict          = {4: 16, 8:14, 16:12, 32:10, 64:8, 128:6, 256:4, 512:3, 1024:2}, # Resolution-specific overrides.
     restore_partial_fn      = None      # Filename of to be restored network
     ):
 
